@@ -1,0 +1,368 @@
+@font-face {
+    font-family: ONEDAY; /* Имя шрифта */
+    src: url(../fonts/ONEDAY.otf); /* Путь к файлу со шрифтом */
+	font-family: number; /* Имя шрифта */
+    src: url(../fonts/10710.ttf); /* Путь к файлу со шрифтом */
+   }
+
+/*----------------------------------------------------------------------*/
+
+body {
+  background: url(../img/china.jpg) fixed;
+  
+}
+/*--------------------------------------------------------------------*/
+.up_part{
+	height:650px;
+	background: rgba(209,209,209,0.5);
+}
+.menu{
+	height:180px;
+	width:100%;
+	padding-top:50px;
+	margin:auto 0;
+	display: -webkit-inline-box;
+	position: absolute;
+	
+	
+}
+.sandwich {
+  width: 60px;
+  height: 70px;
+  position: absolute;
+  /*top: 10;*/
+  margin-top:30px;
+  margin-left:80px
+  /*bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;*/
+}
+.sw-topper {
+  position: relative;
+  top: 0;
+  width: 50px;
+  height: 8px;
+  background: #fff;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: transform 0.5s, top 0.2s;
+/* transition-delay: 0.2s, 0s; */
+}
+.sw-bottom {
+  position: relative;
+  width: 50px;
+  height: 8px;
+  top: 15px;
+  background: #fff;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: transform 0.5s, top 0.2s;
+  transition-delay: 0.2s, 0s;
+}
+.sw-footer {
+  position: relative;
+  width: 50px;
+  height: 8px;
+  top: 30px;
+  background: #fff;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+}
+.sandwich.active .sw-topper {
+  top: 14px;
+  transform: rotate(130deg);
+}
+.sandwich.active .sw-bottom {
+  top: 7px;
+  transform: rotate(-135deg);
+}
+.sandwich.active .sw-footer {
+  opacity: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+.nm_mn{
+	height:40px;
+	width:100px;
+	margin-top: 0px;
+	padding-top: 40px;
+	padding-left: 160px;
+	font-size:25px
+}
+
+.phn_nmbr{
+	height:120px;
+	width:200px;
+	/*background:#fff;*/
+	margin-left:68%
+	
+}
+.all_center{
+	text-align:center;
+	
+}
+.logo{
+	height:300px;
+	width:400px;
+	/*background:#fff;*/
+	margin:0 auto;
+	/*margin-left:40%;*/
+	font-size:50px;
+	/*position:absolute;*/
+	padding-top:40px;
+}
+.all_center h1{
+	font-size:60px;
+	margin:0 auto;
+	text-shadow: 1px 1px 5px white, 0 0 1em #000;
+	
+}
+.all_center  h3{
+	text-shadow: 1px 1px 5px white, 0 0 1em #000;
+}
+.btn_price{
+	height:50px;
+	width:300px;
+	border-radius:25px;
+	background:#adf442;
+	margin:0 auto;
+	text-align:center;
+	padding-top:8px;
+	margin-top:50px;
+	font-size:25px;
+}
+ .btn_price a  {
+	text-decoration:none;
+	color:inherit;
+	
+}
+.btn_price:hover {
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+/*------------------------------------------------------------------------------*/
+.services_part{
+	height:750px;
+	width:100%;
+	background:rgba(255,255,255,0.9);
+	
+	
+}
+.services_part h1,h4{
+	text-align:center;
+}
+.media-body h3{
+	padding-left:10px;
+	padding-top:5px;
+}
+.services_part h1{
+	padding-top:20px;
+	font-size:60px;
+	margin:0 auto;
+	
+}
+.pull-left,.pull-right{
+	margin-top:12px;
+}
+.flag{
+	height:150px;
+	width:90%;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	margin:0 auto;
+}
+.delivery{
+	height:150px;
+	width:90%;
+	/*border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;*/
+	margin:0 auto;
+}
+.prise{
+	height:150px;
+	width:90%;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	margin:0 auto;
+}
+.total{
+	height:150px;
+	width:90%;
+	/*border-top:1px solid #ccc;*/
+	border-bottom:1px solid #ccc;
+	margin:0 auto;
+}
+/*---------------------------------------------------------------*/
+.nmbrs{
+	height:750px;
+	width:100%;
+	
+	background: url('../img/hands.jpg');
+	background-size: cover;
+	/*color:#ccb;*/
+	color:#fff;
+	text-shadow: 1px 1px 5px white, 0 0 1em #000;
+}
+.nmbrs h1{
+	margin:0 auto;
+	text-align:center;
+	padding-top:20px;
+	font-size:60px;
+	padding-left:50px;
+	/*background:rgba(0,0,0,0.8);
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);*/
+}
+.nmbrs h3{
+	text-align:center;
+}
+.long_time{
+	height:350px;
+	width:450px;
+	margin:0 auto;
+	display:block;
+	float:right;
+	padding-right:50px;
+	
+}
+.years{
+	font-size:240px;
+	font-family:number;
+	line-height:1;
+}
+.years span{
+	font-size:90px;
+}
+.text{
+	font-size:40px;
+}
+
+/*----------------------------------------------------------------*/
+.news_foto{
+	height:900px;
+	width:100%;
+	background:rgba(255,255,255,0.9);
+	
+}
+.news_foto h1{
+	margin:0 auto;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:50px;
+	font-size:60px;
+}
+.foto{
+	width:95%;
+	margin:0 auto;
+	/*display: inline-block; */
+}
+.foto img{
+	
+}
+/*----------------------------------------------------------------------------------*/
+
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+/*---------------------------------------------------------------------*/
+.contact_form{
+	height:600px;
+	width:100%;
+	background:rgba(255,230,255,0.9);
+	
+}
+.contact_form h1{
+	margin:0 auto;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:50px;
+	font-size:60px;
+}
+.contact_me{
+	content:'CONTACT';
+	height:160px;
+	width:100%;
+	display:-webkit-box;
+	text-align:center;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.tel_vib{
+	width:50%;
+	height:100%;
+	font-size:30px;
+	padding-top:40px;
+}
+.eml{
+	width:50%;
+	height:100%;
+	font-size:30px;
+	padding-top:40px;
+	
+}
+.form_contact{
+	margin:0 auto;
+	
+	text-align:center;
+	padding-top:20px;
+}
+table{
+	margin:0 auto;
+}
+tbody{
+	
+}
+td{
+	width:400px;
+	padding:0 10px;
+	vertical-align: top;
+}
+input{
+	width:400px;
+	height:50px;
+	border:0px;
+	border-radius:5px;
+	margin-bottom:20px;
+	padding-left:10px;
+	font-size:20px;
+}
+.text_about{
+	height:188px;
+	width:400px;
+	font-size:20px;
+	padding-left:10px;
+	border-radius:5px;
+	padding-top:10px;
+	border:0px;
+	resize: none; 
+	
+}
+.sending_form{
+	font-size:25px;
+	border-radius:25px;
+	background:#adf442;
+	width:280px;
+}
+/*----------------------------------------------------------------------*/
+.footer{
+	height:160px;
+	width:100%;
+	background:#fff;
+}
+.footer h1{
+  margin:0 auto;
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:50px;
+  font-size:60px;
+}
