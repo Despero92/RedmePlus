@@ -1,9 +1,12 @@
 $(document).ready(function(){
-	$(".sandwich, .menu_item").click(function() {
+	$(".sandwich").click(function() {
 	  $(".sandwich").toggleClass("active");
 	});
 	
+	$(".btn-mn").click(function() {
+	  $(".btn-mn.slide-in").toggleClass("active");
+	});
 	
-	
+	/*Ficsed menu*/
 	
 });
