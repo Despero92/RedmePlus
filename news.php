@@ -34,7 +34,7 @@ include( 'admin-part/db.php' );
             <div class="mn_home">
                 <a href="/">RedmiPlus</a>
             </div>
-            
+
             <!-------- slidown_menu ---------->
             <div id="slider" class="overlay overlay-slidedown">
                 <nav id="nav">
@@ -64,22 +64,34 @@ include( 'admin-part/db.php' );
                         <li><a href="#">Мобильные телефоны</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-8 col-md-8">
-
-                    <!--				--><?php //foreach ( $news as $news_post ) { ?>
+                <div class="col-lg-8 col-md-8 news-block">
+					<?php foreach ( $news as $news_post ) { ?>
+                    <div class="news-box">
+                        <div class="img-box">
+                            <img class="img-responsive" src="<?= $news_post[ 'image' ]; ?>" alt="image-description">
+                        </div>
+                        <div class="news-content">
+                            <h2><?= $news_post[ 'title' ]; ?></h2>
+                            <p>
+								<?= $news_post[ 'content' ]; ?>
+                            </p>
+                        </div>
+                    </div>
+					<?php } ?>
+                    <!--				-->
                     <!--                    <div class="media">-->
                     <!--                        <a class="pull-left">-->
                     <!--                            <img class="media-object" src="-->
-					<? //= $news_post[ 'image' ]; ?><!--" height="200">-->
+					<!--" height="200">-->
                     <!--                        </a>-->
                     <!--                        <div class="media-body">-->
                     <!--                            <h3 class="media-heading">-->
-					<? //= $news_post[ 'title' ]; ?><!--</h3>-->
-                    <!--							--><? //= $news_post[ 'content' ]; ?>
+					<!--</h3>-->
+                    <!--							-->
                     <!--                        </div>-->
                     <!--                    </div>-->
                     <!--                    <hr>-->
-                    <!--				--><?php //} ?>
+                    <!--				-->
                 </div>
             </div>
         </div>
