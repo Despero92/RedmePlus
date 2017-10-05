@@ -8,5 +8,12 @@ $(document).ready(function(){
 	});
 	
 	/*Ficsed menu*/
+
+    var $gallery = $('.gallery a').simpleLightbox({
+		overlay: true,
+        preloading: true
+	});
+     var headerHeight = $(".mn").outerHeight();
+     $(".gallery").css('margin-top', headerHeight);
 	
 });

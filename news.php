@@ -5,7 +5,6 @@ include( 'admin-part/db.php' );
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -32,12 +31,13 @@ include( 'admin-part/db.php' );
                 <span>+38 (067) 732-54-54</span>
             </div>
             <div class="mn_home">
-                <a href="/">RedmiPlus</a>
+                <a href="/"><img src="img/logo-text.png" alt="logo"></a>
             </div>
 
             <!-------- slidown_menu ---------->
             <div id="slider" class="overlay overlay-slidedown">
                 <nav id="nav">
+                    <img src="img/logo-blue.png" alt="image-description">
                     <ul>
                         <li><a href="http://localhost/work/news.php">Статьи</a></li>
                         <li><a href="#">О нас</a></li>

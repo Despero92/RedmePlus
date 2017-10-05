@@ -676,6 +676,9 @@ input {
 }
 
 /*---------------------------------NEWS - page start ------------------*/
+body{
+    margin: 0;
+}
 .img-responsive{
     display: block;
     max-width: 100%;
@@ -689,21 +692,18 @@ input {
     position: static;
 }
 #header{
-    height: 900px;
-    background: url(../img/china.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
     width: 100%;
 }
 
 .mn {
     width: 100%;
-    height: 100px;
+    height: auto;
     background: rgba(0, 0, 0, 0.5);
     /*display: flex;*/
     position: fixed;
     z-index: 20;
     padding: 20px 0;
+    top: 0;
 }
 
 .mn_home {
@@ -718,9 +718,20 @@ input {
     text-decoration: none;
     padding: 10px;
 }
+.mn_home img{
+    max-width: 250px;
+}
 
-.nesw_cntnr {
-    padding: 0;
+#nav{
+    top: 50%;
+    margin-top: -115px;
+    height: auto;
+}
+
+#nav img{
+    max-width: 250px;
+    display: block;
+    margin: 0 auto 80px;
 }
 
 .sandwich{
@@ -741,14 +752,21 @@ input {
 .title-box{
     width: 100%;
     display: inline-block;
-    margin: 400px auto 0;
+    /*margin: 400px auto 0;*/
     text-align: center;
+    height: 900px;
+    background: url(../img/china.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 .title-box h1{
-    margin: 0;
+    margin: 400px auto 0;
     font: 65px/68px "",Arial,Helvetica,sans-serif;
     color: #fff;
     font-weight: 700;
+}
+.nesw_cntnr {
+    padding: 0;
 }
 .sidebar{
     padding: 30px 20px 30px;
@@ -833,6 +851,27 @@ input {
     display: inline-block;
 }
 
+.info-block{
+    padding: 110px 180px;
+    text-align: center;
+}
+.icon-box{
+    margin: 0 0 50px 0;
+}
+.icon-box i {
+    font-size: 100px;
+}
+.info_content-box{
+    padding: 0 25px 0;
+}
+.info_content-box h2{
+    margin: 0 0 20px 0;
+}
+
+.gallery img {
+    width: 24.8%;
+    height: auto;
+}
 
 /*---------------------------------NEWS - page end ------------------*/
 /*==========  Desktop First Method  ==========*/
