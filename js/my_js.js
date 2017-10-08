@@ -9,11 +9,19 @@ $(document).ready(function(){
 	
 	/*Ficsed menu*/
 
+	// Галлерея фотографий
     var $gallery = $('.gallery a').simpleLightbox({
 		overlay: true,
         preloading: true
 	});
-     var headerHeight = $(".mn").outerHeight();
-     $(".gallery").css('margin-top', headerHeight);
-	
+
+    // Отступ сверху для блоков под фиксированным меню
+    var headerHeight = $(".mn").outerHeight();
+    $(".gallery, .title-box, .nesw_cntnr, .delivery-block").css('margin-top', headerHeight);
+    $(window).resize( function (  ) {
+        var headerHeight = $(".mn").outerHeight();
+        $(".gallery, .title-box, .nesw_cntnr, .delivery-block").css('margin-top', headerHeight);
+    });
+
+
 });

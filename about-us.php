@@ -43,12 +43,19 @@
         </div>
         <section class="title-box">
             <h1>Телефоны из Китая</h1>
+            <p>
+                Lorem Ipsum - это текст-"рыба",
+                часто используемый в печати и вэб-дизайне.
+                Lorem Ipsum является стандартной "рыбой"Lorem Ipsum - это текст-"рыба",
+                часто используемый в печати и вэб-дизайне.
+                Lorem Ipsum является стандартной "рыбой"
+            </p>
         </section>
     </header>
     <main id="main">
         <div class="container-fluid info-block">
             <div class="row">
-                <section class="col-lg-4 col-md-4 info-box">
+                <section class="col-lg-4 col-md-offset-0 col-md-4 col-sm-offset-2 col-sm-8 col-xs-12 info-box">
                     <div class="icon-box">
                         <i class="fa fa-cogs" aria-hidden="true"></i>
                     </div>
@@ -58,14 +65,10 @@
                             Lorem Ipsum - это текст-"рыба",
                             часто используемый в печати и вэб-дизайне.
                             Lorem Ipsum является стандартной "рыбой"
-                            для текстов на латинице с начала XVI века.
-                            В то время некий безымянный печатник создал
-                            большую коллекцию размеров и форм шрифтов,
-                            используя Lorem Ipsum для распечатки образцов.
                         </p>
                     </div>
                 </section>
-                <section class="col-lg-4 col-md-4 info-box">
+                <section class="col-lg-4 col-md-offset-0 col-md-4 col-sm-offset-2 col-sm-8 col-xs-12 info-box">
                     <div class="icon-box">
                         <i class="fa fa-shield" aria-hidden="true"></i>
                     </div>
@@ -75,14 +78,10 @@
                             Lorem Ipsum - это текст-"рыба",
                             часто используемый в печати и вэб-дизайне.
                             Lorem Ipsum является стандартной "рыбой"
-                            для текстов на латинице с начала XVI века.
-                            В то время некий безымянный печатник создал
-                            большую коллекцию размеров и форм шрифтов,
-                            используя Lorem Ipsum для распечатки образцов.
                         </p>
                     </div>
                 </section>
-                <section class="col-lg-4 col-md-4 info-box">
+                <section class="col-lg-4 col-md-offset-0 col-md-4 col-sm-offset-2 col-sm-8 col-xs-12 info-box">
                     <div class="icon-box">
                         <i class="fa fa-usd" aria-hidden="true"></i>
                     </div>
@@ -92,10 +91,6 @@
                             Lorem Ipsum - это текст-"рыба",
                             часто используемый в печати и вэб-дизайне.
                             Lorem Ipsum является стандартной "рыбой"
-                            для текстов на латинице с начала XVI века.
-                            В то время некий безымянный печатник создал
-                            большую коллекцию размеров и форм шрифтов,
-                            используя Lorem Ipsum для распечатки образцов.
                         </p>
                     </div>
                 </section>
@@ -104,6 +99,7 @@
     </main>
 </div>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/simple-lightbox.min.js"></script>
 <script type="text/javascript" src="js/my_js.js"></script>
 <script type="text/javascript" src="js/slidown_menu.js"></script>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

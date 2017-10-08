@@ -45,20 +45,48 @@
 			</div>
 		</header>
         <main id="main">
-            <div class="gallery">
-                <a href="img/img1.jpg">
-                    <img src="img/img1.jpg" alt="image-description">
-                </a>
-                <a href="img/img1.jpg">
-                    <img src="img/img1.jpg" alt="image-description">
-                </a>
-                <a href="img/img1.jpg">
-                    <img src="img/img1.jpg" alt="image-description">
-                </a>
-                <a href="img/img1.jpg">
-                    <img src="img/img1.jpg" alt="image-description">
-                </a>
-            </div>
+            <ul class="gallery">
+                <li>
+                    <a href="img/img1.jpg">
+                        <img class="img-responsive" src="img/img1.jpg" alt="image-description">
+                    </a>
+                </li>
+                <li>
+                    <a href="img/img1.jpg">
+                        <img class="img-responsive" src="img/img1.jpg" alt="image-description">
+                    </a>
+                </li>
+                <li>
+                    <a href="img/img1.jpg">
+                        <img class="img-responsive" src="img/img1.jpg" alt="image-description">
+                    </a>
+                </li>
+                <li>
+                    <a href="img/img1.jpg">
+                        <img class="img-responsive" src="img/img1.jpg" alt="image-description">
+                    </a>
+                </li>
+                <li>
+                    <a href="img/img1.jpg">
+                        <img class="img-responsive" src="img/img1.jpg" alt="image-description">
+                    </a>
+                </li>
+                <li>
+                    <a href="img/img1.jpg">
+                        <img class="img-responsive" src="img/img1.jpg" alt="image-description">
+                    </a>
+                </li>
+                <li>
+                    <a href="img/img1.jpg">
+                        <img class="img-responsive" src="img/img1.jpg" alt="image-description">
+                    </a>
+                </li>
+                <li>
+                    <a href="img/img1.jpg">
+                        <img class="img-responsive" src="img/img1.jpg" alt="image-description">
+                    </a>
+                </li>
+            </ul>
         </main>
 	</div>
 	

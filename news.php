@@ -33,11 +33,11 @@ include( 'admin-part/db.php' );
             <div class="mn_home">
                 <a href="/"><img src="img/logo-text.png" alt="logo"></a>
             </div>
-
+            
             <!-------- slidown_menu ---------->
             <div id="slider" class="overlay overlay-slidedown">
                 <nav id="nav">
-                    <img src="img/logo-blue.png" alt="image-description">
+                    <img class="img-responsive" src="img/logo-blue.png" alt="image-description">
                     <ul>
                         <li><a href="http://localhost/work/news.php">Статьи</a></li>
                         <li><a href="#">О нас</a></li>
@@ -48,25 +48,21 @@ include( 'admin-part/db.php' );
                 </nav>
             </div>
         </div>
-        <section class="title-box">
-            <h1>Телефоны из Китая</h1>
-        </section>
     </header>
     <main id="main">
         <div class="container-fluid nesw_cntnr">
             <div class="row">
-                <div class="col-lg-3 col-md-3 sidebar">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 sidebar">
                     <h2>Категории</h2>
                     <ul>
-                        <li><a href="#">Мобильные телефоны</a></li>
-                        <li><a href="#">Мобильные телефоны</a></li>
-                        <li><a href="#">Мобильные телефоны</a></li>
-                        <li><a href="#">Мобильные телефоны</a></li>
+                        <li><a href="#">Гаджеты</a></li>
+                        <li><a href="#">Новости Китая</a></li>
+                        <li><a href="#">Электроника</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-8 col-md-8 news-block">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 news-block">
 					<?php foreach ( $news as $news_post ) { ?>
-                    <div class="news-box">
+                    <div class="news-box clearfix">
                         <div class="img-box">
                             <img class="img-responsive" src="<?= $news_post[ 'image' ]; ?>" alt="image-description">
                         </div>
@@ -100,6 +96,10 @@ include( 'admin-part/db.php' );
 
     </footer>
 </div>
+
+
+
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 <!-- javascript for bootstrap -->
@@ -108,6 +108,7 @@ include( 'admin-part/db.php' );
 <!--<script>new WOW().init();</script>-->
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>-->
 <!--<script type="text/javascript" src="js/gallery.js"></script>-->
+<script type="text/javascript" src="js/simple-lightbox.min.js"></script>
 <script type="text/javascript" src="js/my_js.js"></script>
 <script type="text/javascript" src="js/slidown_menu.js"></script>
 <script type="text/javascript" src="js/count_numbers.js"></script>

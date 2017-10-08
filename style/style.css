@@ -72,30 +72,42 @@
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    display: inline-flex;
     height: 100%;
     position: relative;
+    max-width: 740px;
 }
 
 .overlay ul li {
-    display: block;
+    position: relative;
+    display: inline-block;
     height: 20%;
     /*height: calc(100% / 5);*/
     min-height: 54px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-right: 1px solid rgba(0, 0, 0, 0.67);
     padding: 0 25px;
 }
-
-.overlay ul li:last-child {
-    border: none;
+.overlay ul li:before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 0 solid;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.67);
+    top: 18px;
+    left: -7px;
+}
+.overlay ul li:first-child:before {
+    display: none;
 }
 
 .overlay ul li a {
     font-size: 34px;
     font-weight: 300;
-    display: block;
+    /*display: block;*/
     color: #fff;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
@@ -152,15 +164,11 @@
     margin-top: 30px;
     margin-left: 80px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 1000;
     /*bottom: 0;
     left: 0;
     right: 0;
     margin: auto;*/
-}
-
-.sandwich:hover {
-
 }
 
 .sw-topper {
@@ -678,18 +686,36 @@ input {
 /*---------------------------------NEWS - page start ------------------*/
 body{
     margin: 0;
+    position: relative;
 }
+.sw-topper,
+.sw-bottom,
+.sw-footer{
+    width: 40px;
+    height: 4px;
+}
+.sw-bottom{
+    top: 7px;
+}
+.sw-footer{
+    top: 14px;
+}
+.sandwich.active .sw-topper{
+    top: 11px;
+}
+
 .img-responsive{
     display: block;
     max-width: 100%;
     height: auto;
 }
 .wraper{
-    background-color: #f5f5f5;
+    background-color: #fff;
 }
 .close_wraper{
     width: 100%;
     position: static;
+    overflow: hidden;
 }
 #header{
     width: 100%;
@@ -710,6 +736,7 @@ body{
     text-align: center;
     vertical-align: top;
     overflow: hidden;
+    margin-left: 11%;
 }
 
 .mn_home a {
@@ -724,7 +751,7 @@ body{
 
 #nav{
     top: 50%;
-    margin-top: -115px;
+    margin-top: -65px;
     height: auto;
 }
 
@@ -736,9 +763,11 @@ body{
 
 .sandwich{
     position: relative;
-    margin: 5px 0 0 20px;
+    margin: 15px 0 0 20px;
     display: inline-block;
     float: left;
+    height: 30px;
+    width: 40px;
 }
 .box-telefons{
     display: inline-block;
@@ -751,19 +780,19 @@ body{
 }
 .title-box{
     width: 100%;
-    display: inline-block;
-    /*margin: 400px auto 0;*/
     text-align: center;
-    height: 900px;
-    background: url(../img/china.jpg);
+    height: auto;
     -webkit-background-size: cover;
     background-size: cover;
+    max-width: 600px;
+    margin: 0 auto;
 }
 .title-box h1{
-    margin: 400px auto 0;
-    font: 65px/68px "",Arial,Helvetica,sans-serif;
-    color: #fff;
+    margin: 50px 0 20px 0;
+    font: 55px/58px "",Arial,Helvetica,sans-serif;
+    color: #000;
     font-weight: 700;
+    display: inline-block;
 }
 .nesw_cntnr {
     padding: 0;
@@ -787,19 +816,21 @@ body{
     margin: 25px 0;
     text-align: center;
 }
-.sidebar li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    vertical-align: middle;
-    /*padding: 10px 0;*/
-}
 .sidebar li a {
     letter-spacing: 0;
     padding: 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #000;
+    /*padding: 10px 0;*/
 }
 /*.sidebar li a:hover,.sidebar li a:active {*/
     /*letter-spacing: 2px;*/
 /*}*/
+.sidebar li a:hover{
+    color: #1c6399;
+}
 .sidebar li a:after {
     backface-visibility: hidden;
     border: 1px solid rgba(255, 0, 0, 0);
@@ -825,8 +856,8 @@ body{
 
 .news-block{
     max-width: 950px;
-    margin: 0 0 0 60px;
-    padding: 40px 0;
+    margin: 0;
+    padding: 40px 15px 0 0;
 }
 .news-box{
     display: inline-block;
@@ -852,14 +883,14 @@ body{
 }
 
 .info-block{
-    padding: 110px 180px;
+    padding: 70px 150px;
     text-align: center;
 }
 .icon-box{
     margin: 0 0 50px 0;
 }
 .icon-box i {
-    font-size: 100px;
+    font-size: 70px;
 }
 .info_content-box{
     padding: 0 25px 0;
@@ -868,10 +899,29 @@ body{
     margin: 0 0 20px 0;
 }
 
-.gallery img {
-    width: 24.8%;
-    height: auto;
+.gallery{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    letter-spacing: 0;
+    line-height: 0;
+    font-size: 0;
 }
+.gallery li{
+    display: inline-block;
+    width: 25%;
+}
+.sl-wrapper .sl-counter{
+    font-size: 20px;
+}
+
+.delivery-block {
+    padding: 70px 150px;
+}
+.box__settings {
+    margin: 0 0 50px 0;
+}
+
 
 /*---------------------------------NEWS - page end ------------------*/
 /*==========  Desktop First Method  ==========*/
@@ -879,10 +929,10 @@ body{
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
     .news-block{
-        margin: 0 0 0 40px;
+        margin: 0;
     }
-    .news-content{
-        max-width: 420px;
+    .info-block{
+        padding: 70px 40px;
     }
 }
 @media only screen and (min-width: 1170px) {
@@ -1006,17 +1056,87 @@ body{
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+    .sidebar{
+        display: inline-block;
+        float: left;
+    }
+    .news-block{
+        display: inline-block;
+        float: left;
+        /*max-width: 540px;*/
+    }
+    .news-content{
+        width: 57%;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+    #nav img{
+        margin: 0 auto 40px;
+    }
+    .overlay ul li:before{
+        display: none;
+    }
+    .title-box{
+        padding: 0 20px;
+    }
+    .sidebar{
+        max-width: 100%;
+        padding: 30px 20px 0;
+    }
+    .sidebar ul{
+        text-align: center;
+    }
+    .sidebar ul li{
+        display: inline-block;
+        margin: 10px;
+    }
+    .news-block{
+        padding: 40px 15px 0;
+    }
+    .img-box{
+        margin: 0 auto;
+        display: block;
+        float: none;
+    }
+    .img-box img{
+        margin: 0 auto;
+        display: block;
+    }
+    .news-box{
+        margin: 0 auto 60px;
+        display: block;
+        float: none;
+        padding: 0 50px;
+    }
+    .news-content{
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .info-block{
+        padding: 40px 20px;
+    }
+    .delivery-block{
+        padding: 40px 70px;
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+    .mn_home{
+        display: none;
+    }
+    .news-box{
+        padding: 0 20px;
+    }
+    .delivery-block{
+        padding: 40px 20px;
+    }
 }
 
 /* Custom, iPhone Retina */
