@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	if($(".cd-secondary-nav")){
 	var secondaryNav = $('.cd-secondary-nav'),
-	secondaryNavTopPosition = secondaryNav.offset().top;
+	topElement = $('.btn_price'),
+	secondaryNavTopPosition = topElement.offset().top;
 	$(window).on('scroll', function(){
 	if($(window).scrollTop() > secondaryNavTopPosition ) {
 	secondaryNav.addClass('is-fixed');
