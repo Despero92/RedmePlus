@@ -102,8 +102,32 @@ include ('admin-part/db.php');
 			</div>
 		</div>
 	</div>
+	<?php 
+    $string = "Всем привет из Манчестера !"; 
+    $exp_string = explode(' ', $string);
+        foreach($exp_string as $value){
+            if (mb_strlen($value)>7){
+                $a = mb_substr($value, 0 , 6);
+                $value = $a.'&#42;';
+                
+            }
+            $array[]=$value;
+        }
+        $string = implode(' ', $array);
+        echo $string;?>
   
   <!-- javascript for bootstrap -->
   <script src="js/bootstrap.js"></script>
   </body>
   </html>
+
+  <?php
+  $a = 1;
+  $b = 2;
+  $a = $a ^ $b;
+  $b = $b ^ $a;
+  $a = $b ^ $a;
+  echo "<br>".$b."<br>";
+  echo $a."<br>"
+
+  ?>
