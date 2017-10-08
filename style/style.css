@@ -737,6 +737,7 @@ body{
     vertical-align: top;
     overflow: hidden;
     margin-left: 11%;
+    margin-top: 10px;
 }
 
 .mn_home a {
@@ -763,7 +764,7 @@ body{
 
 .sandwich{
     position: relative;
-    margin: 15px 0 0 20px;
+    margin: 28px 0 0 20px;
     display: inline-block;
     float: left;
     height: 30px;
@@ -774,9 +775,39 @@ body{
     float: right;
     margin: 10px 20px 0 0;
 }
-.box-telefons span{
+.box-icons{
+    display: block;
+}
+.box-icons a:after{
+    position: absolute;
+    content: '/';
+    top: 15px;
+    right: -14px;
+    color: #fff;
+    font-size: 19px;
+}
+.box-icons a:last-child:after{
+    display: none;
+}
+.box-icons a:last-child{
+    margin: 0;
+}
+.box-icons a{
+    position: relative;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    font-size: 19px;
+    color: #fff;
+}
+.box-icons span i{
+    margin: 0 5px 0 0;
+    color: #fff;
+}
+.tel{
     display: block;
     color: #fff;
+    font-size: 19px;
+    text-align: right;
 }
 .title-box{
     width: 100%;
@@ -1072,6 +1103,9 @@ body{
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .mn_home{
+        display: none;
+    }
     #nav img{
         margin: 0 auto 40px;
     }
@@ -1128,8 +1162,20 @@ body{
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-    .mn_home{
-        display: none;
+    .mn{
+        padding: 10px 0;
+    }
+    .sandwich{
+        margin: 20px 0 0 20px;
+    }
+    .tel{
+        font-size: 17px;
+    }
+    .box-icons a{
+        font-size: 13px;
+    }
+    .box-icons a:after{
+        top: 5px;
     }
     .news-box{
         padding: 0 20px;

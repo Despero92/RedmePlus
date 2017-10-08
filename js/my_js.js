@@ -1,12 +1,16 @@
 $(document).ready(function(){
-	$(".sandwich").click(function() {
-	  $(".sandwich").toggleClass("active");
+	$("#trigger").click(function() {
+	  $("#trigger").toggleClass("active");
+	  $(".overlay").toggleClass("open");
+	  $(".wraper").toggleClass("close_wraper");
 	});
 	
 	$(".btn-mn").click(function() {
 	  $(".btn-mn.slide-in").toggleClass("active");
 	});
-	
+
+	var windowHeight = $(window).height();
+    $(".up_part").css('height', windowHeight);
 	/*Ficsed menu*/
 
 	// Галлерея фотографий

@@ -27,8 +27,11 @@ include( 'admin-part/db.php' );
                 <div class="sw-footer"></div>
             </div>
             <div class="box-telefons">
-                <span>+38 (098) 732-54-54</span>
-                <span>+38 (067) 732-54-54</span>
+                <span class="tel">+86 (181) 263-843-01</span>
+                <div class="box-icons">
+                    <a href="#"><span><i class="fa fa-weixin fa-2x"></i>WeChat</span></a>
+                    <a href="#"><span><i class="fa fa-whatsapp fa-2x"></i> WhatsApp</span></a>
+                </div>
             </div>
             <div class="mn_home">
                 <a href="/"><img src="img/logo-text.png" alt="logo"></a>
@@ -74,34 +77,14 @@ include( 'admin-part/db.php' );
                         </div>
                     </div>
 					<?php } ?>
-                    <!--				-->
-                    <!--                    <div class="media">-->
-                    <!--                        <a class="pull-left">-->
-                    <!--                            <img class="media-object" src="-->
-					<!--" height="200">-->
-                    <!--                        </a>-->
-                    <!--                        <div class="media-body">-->
-                    <!--                            <h3 class="media-heading">-->
-					<!--</h3>-->
-                    <!--							-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                    <!--                    <hr>-->
-                    <!--				-->
                 </div>
             </div>
         </div>
     </main>
-    <footer id="footer">
-
-    </footer>
 </div>
-
-
-
-
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script type="text/javascript" src="js/my_js.js"></script>
 <!-- javascript for bootstrap -->
 <!--<script src="js/bootstrap.js"></script>-->
 <!--<script src="js/wow.min.js"></script>-->
@@ -109,8 +92,7 @@ include( 'admin-part/db.php' );
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>-->
 <!--<script type="text/javascript" src="js/gallery.js"></script>-->
 <script type="text/javascript" src="js/simple-lightbox.min.js"></script>
-<script type="text/javascript" src="js/my_js.js"></script>
-<script type="text/javascript" src="js/slidown_menu.js"></script>
+<!--<script type="text/javascript" src="js/slidown_menu.js"></script>-->
 <script type="text/javascript" src="js/count_numbers.js"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
