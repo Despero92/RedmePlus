@@ -63,25 +63,27 @@
 				</div>
 				<div class="nm_mn"><p>МЕНЮ</p></div>
 				<div class="phn_nmbr">
-					<h2 style="float:right">+123456789</h2>
-					<p style="font-size:20px;float:right">Наш телефон</p>
+					<h2 style="float:right">+86 (181) 263-843-01</h2> <!-- ТЕЛЕФОН Лендинг -->
+					<p style="font-size:20px;float:right"><i class="fa fa-weixin fa-2x"></i> WeChat / <i class="fa fa-whatsapp fa-2x"></i> WhatsApp</p>
 				</div>
 			</div>
 			<div class="all_center">
-				<div class="logo"><i class="fa fa-motorcycle fa-5x"></i></div>
+				<div class="logo"></div>
 				<h1>Мобильные телефоны оптом<br />
 				из Китая по низким ценам</h1>
 				<h3>Ваш надежный партнер</h3>
 				
 				<div  class="cd-secondary-nav">
-				<div id="trigger_min" class="btn-mn is-hidden"> 
-					<div class="stick-topper"></div>
-					<div class="stick-bottom"></div>
-					<div class="stick-footer"></div>
+					<div id="trigger_min" class="btn-mn is-hidden"> 
+						<div class="stick-topper"></div>
+						<div class="stick-bottom"></div>
+						<div class="stick-footer"></div>
+					</div>
+					<div class="mn_home_index">
+						<a href="/work/">RedmiPlus</a>
+					</div>
 				</div>
-				
-				</div>
-				<div class="btn_price"><a href="#">Скачать прайс</a></div>
+				<div class="btn_price"><a href="admin-part/send_news.php?price=receive">Скачать прайс</a></div>
 			</div>
 				<!-------- slidown_menu ---------->
 				<div id="slider" class="overlay overlay-slidedown">
@@ -90,25 +92,24 @@
 						<ul>
 							<li><a href="http://localhost/work/news.php">Статьи</a></li><i class="fa fa-circle" aria-hidden="true"></i>
 							<li><a href="#">О нас</a></li><i class="fa fa-circle" aria-hidden="true"></i>
-							<li><a href="#">Фотоотчеты</a></li><i class="fa fa-circle" aria-hidden="true"></i>
-							<li><a href="#">Оплата</a></li><i class="fa fa-circle" aria-hidden="true"></i>
-							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Фотоотчеты</a></li>
+							<li><a href="#">Оплата и Доставка</a></li>
 						</ul>
 					</nav>
 				</div>
 				<script src="js/classie.js"></script>
 				
 		</div>
-			<!--<script type='text/javascript'>  document.write('Разрешение экрана: <b>'+screen.width+'×'+screen.height+'px.</b>'); </script>-->
+			<!-- <script type='text/javascript'>  document.write('Разрешение экрана: <b>'+screen.width+'×'+screen.height+'px.</b>'); </script> -->
 			<div class="services_part">
 				<h1>Услуги</h1>
 				<h3>Все услуги сервиса делятся на четыре основных подразделения<br />
 				(кликните на интересующий вас раздел). Добро пожаловать в Китай!</h3>
 				<div class="flag slideInLeft wow">
 					<div class="media">
-					  <a class="pull-left" href="#">
-						<img class="media-object" src="http://via.placeholder.com/150x120" alt="...">
-					  </a>
+					  <div class="pull-left">
+						<i class="fa fa-flag fa-5x" aria-hidden="true"></i>
+					  </div>
 					  <div class="media-body">
 						<h3 class="media-heading">1. Главный офис находится в Китае </h3>
 						Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.
@@ -118,9 +119,9 @@
 				</div>
 				<div class="delivery slideInRight wow">
 					<div class="media">
-					  <a class="pull-right" href="">
-						<img class="media-object" src="http://via.placeholder.com/150x120" alt="...">
-					  </a>
+					  <div class="pull-right">
+						<i class="fa fa-cubes fa-5x"></i>
+					  </div>
 					  <div class="media-body">
 						<h3 class="media-heading" >2. Только оптовые продажи </h3>
 						Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.
@@ -131,9 +132,9 @@
 				</div>
 				<div class="prise slideInLeft wow">
 					<div class="media">
-					  <a class="pull-left" href="">
-						<img class="media-object" src="http://via.placeholder.com/150x120" alt="...">
-					  </a>
+					  <div class="pull-left">
+						<i class="fa fa-truck fa-5x"></i>
+					  </div>
 					  <div class="media-body" >
 						<h3 class="media-heading" >3. Сотрудничество с транспортными компаниями</h3>
 						Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.
@@ -143,9 +144,9 @@
 				</div>
 				<div class="total slideInRight wow">
 					<div class="media">
-					  <a class="pull-right" href="">
-						<img class="media-object" src="http://via.placeholder.com/150x120" alt="...">
-					  </a>
+					  <div class="pull-right">
+						<i class="fa fa-thumbs-o-up fa-5x"></i>
+					  </div>
 					  <div class="media-body">
 						<h3 class="media-heading">4. Гарантия качественной работы</h3>
 						Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.
@@ -222,26 +223,33 @@
 							
 			</div>
 			<div class="contact_form">
-				<h1>Форма обратной связи</h1>
 				<div class="contact_me">
-					<div class="tel_vib">+123456889 <p>VIBER</p></div>
-					<div class="eml">Exsaple@exsample.me</div>
+					<div class="tel_vib">
+						<h2>+86 (181) 263-843-01</h2>				
+						<i class="fa fa-weixin fa-2x"></i> WeChat / 
+						<i class="fa fa-whatsapp fa-2x"></i> WhatsApp
+						<p>Задайте ваш вопрос и мы<br />свяжемся с вами в ближайшее время</p>
+					
+					
+					
+					</div>
+					
 				</div>
 				<div class="form_contact">
-					<form action="" method="post">
+					<form action="admin-part/send_news.php" method="post">
 						<table>
 							<tr>
 								<td>
-								<input type="name" name="name" placeholder="Type name">
-								<input type="text" name="phone" placeholder="Type phone">
-								<input type="email" name="email" placeholder="Type email">
+								<input type="name" name="name" placeholder="Ваше имя и фамилия">
+								<input type="text" name="phone" placeholder="Ваш номер телефона">
+								<input type="email" name="email" placeholder="Ваш email">
 								</td>
 								<td>
-								<textarea class="text_about" type="text" name="about" placeholder="Type something…"></textarea>
+								<textarea class="text_about" type="text" name="about" placeholder="Что вас интересует?"></textarea>
 								</td>
 							</tr>
 							<tr>
-								<td colspan="2"> <button type="submit" class="btn sending_form">Отправить</button> </td>
+								<td colspan="2"> <button type="submit" name="btn_send_contact" value="contact" class="btn sending_form">Отправить</button> </td>
 							</tr>
 						  <!--<legend>Условные обозначения</legend>
 						  <label>Название</label>
@@ -266,11 +274,11 @@
 				
 				<div class="ftr_right">
 					<h3>Подписаться на прайс</h3>
-					<form action="" method="post">
+					<form action="admin-part/send_news.php" method="post">
 						<div class="send_dispath input-group">
-							<input type="email" name="email_dispatch" placeholder="Type email">
+							<input type="email" name="email_dispatch" placeholder="Ваш email">
 							<span class="bth_ftr input-group-btn">
-								<button type="submit" class="btn_send_dispath">Отправить</button>
+								<button type="submit" class="btn_send_dispath" name="send_dispath" value="dispath">Отправить</button>
 							</span>
 						</div>
 					</form>
