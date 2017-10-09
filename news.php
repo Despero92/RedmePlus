@@ -40,13 +40,13 @@ include( 'admin-part/db.php' );
             <!-------- slidown_menu ---------->
             <div id="slider" class="overlay overlay-slidedown">
                 <nav id="nav">
-                    <img class="img-responsive" src="img/logo-blue.png" alt="image-description">
+                    <img class="img-responsive img-text" src="img/logo-text.png" alt="image-description">
+                    <img class="img-responsive img-dragon" src="img/logo-blue.png" alt="logo">
                     <ul>
                         <li><a href="http://localhost/work/news.php">Статьи</a></li>
                         <li><a href="#">О нас</a></li>
                         <li><a href="#">Фотоотчеты</a></li>
-                        <li><a href="#">Оплата</a></li>
-                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата и Доставка</a></li>
                     </ul>
                 </nav>
             </div>

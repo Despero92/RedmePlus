@@ -60,12 +60,8 @@
 /* Menu style */
 .overlay nav {
     text-align: center;
-    position: relative;
-    top: 80%;
     height: 40%;
     width: 100%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 .overlay ul {
@@ -99,6 +95,9 @@
     background-color: rgba(0, 0, 0, 0.67);
     top: 18px;
     left: -7px;
+}
+.overlay ul li:nth-last-child(1):before{
+    display: none;
 }
 .overlay ul li:first-child:before {
     display: none;
@@ -751,20 +750,20 @@ body{
 }
 
 #nav{
-    top: 50%;
-    margin-top: -65px;
     height: auto;
+    margin-top: 20px;
 }
-
-#nav img{
+#nav .img-dragon{
     max-width: 250px;
     display: block;
     margin: 0 auto 80px;
 }
-
+#nav .img-text{
+    display: none;
+}
 .sandwich{
     position: relative;
-    margin: 28px 0 0 20px;
+    margin: 20px 0 0 20px;
     display: inline-block;
     float: left;
     height: 30px;
@@ -952,6 +951,9 @@ body{
 .box__settings {
     margin: 0 0 50px 0;
 }
+.box__settings h2{
+    text-align: center;
+}
 
 
 /*---------------------------------NEWS - page end ------------------*/
@@ -1087,6 +1089,9 @@ body{
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+    .sandwich{
+        margin: 20px 0 0 40px;
+    }
     .sidebar{
         display: inline-block;
         float: left;
@@ -1106,8 +1111,21 @@ body{
     .mn_home{
         display: none;
     }
-    #nav img{
+    #nav ul li{
+        display: block;
+    }
+    #nav .img-dragon{
+        display: none;
+    }
+    #nav .img-text{
         margin: 0 auto 40px;
+        max-width: 200px;
+        height: 24px;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        margin-left: -97px;
+        display: block;
     }
     .overlay ul li:before{
         display: none;
@@ -1162,11 +1180,14 @@ body{
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+    .sandwich{
+        margin: 20px 0 0 20px;
+    }
     .mn{
         padding: 10px 0;
     }
-    .sandwich{
-        margin: 20px 0 0 20px;
+    #nav .img-text{
+        top: 30px;
     }
     .tel{
         font-size: 17px;

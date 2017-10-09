@@ -9,8 +9,17 @@ $(document).ready(function(){
 	  $(".btn-mn.slide-in").toggleClass("active");
 	});
 
-	var windowHeight = $(window).height();
-    $(".up_part").css('height', windowHeight);
+    if($(window).width() < 768){
+        var navHeight = ($("#nav").outerHeight() / 2) - 10;
+        $("#nav").css('margin-top', navHeight);
+    }
+    $(window).resize( function () {
+        if($(window).width() < 768){
+            var navHeight = ($("#nav").outerHeight() / 2) - 10;
+            $("#nav").css('margin-top', navHeight);
+        }
+    });
+
 	/*Ficsed menu*/
 
 	// Галлерея фотографий

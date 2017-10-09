@@ -21,27 +21,30 @@
 					<div class="sw-bottom"></div>
 					<div class="sw-footer"></div>
 				</div>
-				<div class="box-telefons">
-					<span>+38 (098) 732-54-54</span>
-					<span>+38 (067) 732-54-54</span>
-				</div>
+                <div class="box-telefons">
+                    <span class="tel">+86 (181) 263-843-01</span>
+                    <div class="box-icons">
+                        <a href="#"><span><i class="fa fa-weixin fa-2x"></i>WeChat</span></a>
+                        <a href="#"><span><i class="fa fa-whatsapp fa-2x"></i> WhatsApp</span></a>
+                    </div>
+                </div>
 				<div class="mn_home">
 					<a href="/"><img src="img/logo-text.png" alt="logo"></a>
 				</div>
 				
 				<!-------- slidown_menu ---------->
-				<div id="slider" class="overlay overlay-slidedown">
-					<nav id="nav">
-						<img src="img/logo-blue.png" alt="image-description">
-						<ul>
-							<li><a href="http://localhost/work/news.php">Статьи</a></li>
-							<li><a href="#">О нас</a></li>
-							<li><a href="#">Фотоотчеты</a></li>
-							<li><a href="#">Оплата</a></li>
-							<li><a href="#">Доставка</a></li>
-						</ul>
-					</nav>
-				</div>
+                <div id="slider" class="overlay overlay-slidedown">
+                    <nav id="nav">
+                        <img class="img-responsive img-text" src="img/logo-text.png" alt="image-description">
+                        <img class="img-responsive img-dragon" src="img/logo-blue.png" alt="logo">
+                        <ul>
+                            <li><a href="http://localhost/work/news.php">Статьи</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Фотоотчеты</a></li>
+                            <li><a href="#">Оплата и Доставка</a></li>
+                        </ul>
+                    </nav>
+                </div>
 			</div>
 		</header>
         <main id="main">
